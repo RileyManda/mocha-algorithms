@@ -10,30 +10,37 @@
   - [Prerequisites](#prerequisites)
 - [🔑 Key features](#key-features)
 - [👥 Authors](#authors)
+- [👥 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
-  -- [🙏 Acknowledgements](#acknowledgements)
+  - [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 [Mocha-Algorithms] <a name="Mocha-Algorithms"></a>
+# 📖 [Mocha-Algorithms]
+<a name="about-project"></a>
 
-**[Mocha-Algorithms]** A mini algorithms sandbox i created to run test cases using mocha as a way of practicing Algorithms and Data Structures.
+**[Mocha-Algorithms]** A mini algorithms sandbox I created to run test cases using Mocha as a way of practicing Algorithms and Data Structures.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
+<details>
   <summary>Javascript runtime environment</summary>
   <ul>
-    <li><a href="https://nodejs.org/en/">Node JS</a></li>
+    <li><a href="https://nodejs.org/en/">Node.js</a></li>
   </ul>
+</details>
 
+<details>
   <summary>Version control</summary>
   <ul>
-    <li><a href="github.com">Git Hub</a></li>
+    <li><a href="github.com">GitHub</a></li>
   </ul>
+</details>
 
+<details>
   <summary>Mocha</summary>
   <ul>
     <li><a href="https://www.npmjs.com/package/mocha">Mocha</a></li>
@@ -41,27 +48,17 @@
 </details>
 
 <!-- Features -->
+### Key Features
 
-### Key Features <a name="key-features"></a>
-
-- **[Custom TestCases]**
+- **[Custom Test Cases]**
 - **[Mocha Tests]**
 - **[Multiple Algorithms with various test cases]**
 - **[Test Algorithms on your machine without using node file.js]**
 - **[Well documented code with comments to help algorithms enthusiasts understand each line of code]**
 
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-- No live demo available yet.Coming soon.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- GETTING STARTED -->
-
 ## 💻 Getting Started <a name="getting-started"></a>
 
 Creating your first "Mocha-Algorithms" project
@@ -70,17 +67,16 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
+In order to run this project, you need:
 
--A Git hub account
-<br>
--Node JS
-<br>
--Visual Studio Code or any other code editor of your preference
+- A GitHub account
+- Node.js
+- Visual Studio Code or any other code editor of your preference
 
 ### Setup
 
-Clone this repository to your desired folder using gh or https:<br>
+Clone this repository to your desired folder using GitHub CLI or HTTPS:
+<br>
 ```sh
   cd your-folder
   git clone git@github.com:RileyManda/Mocha-Algorithms.git
@@ -118,8 +114,8 @@ npm init -y
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Authors <a name="authors"></a>
-
+## 👥 Authors and Contributors:
+### Authors
 👤 **Riley Manda**
 
 - GitHub: [@RileyManda](https://github.com/RileyManda)
@@ -133,7 +129,7 @@ npm init -y
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
+### Future Features
 - [ ] **[Create a Live UI sandbox for the project]**
       This feature will enable users view their code and run tests cases seamlessly
 
