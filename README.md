@@ -1,4 +1,11 @@
 <a name="readme-top"></a>
+<div align="center">
+  <img src="mocha-logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
+
+  <h3><b>Mocha-Algorithms</b></h3>
+
+</div>
 
 # 📗 Table of Contents
 
