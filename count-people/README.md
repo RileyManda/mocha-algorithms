@@ -37,14 +37,39 @@ You are given a task to count the number of people in a room. Your goal is to wr
 
 ## Implementation
 
-Remember, you need to come up with an algorithm that can handle different scenarios and return the correct count of people in the room based on the given list of names.
+The algorithm uses a simple approach to count the number of people in a room based on the provided list of names.
+
+Here is the code breakdown:
+
+```javascript
+function countPeople(room) {
+let count = room.length;
+
+if (count === 2) {
+count += 1;
+}
+
+return count;
+}
+```
+
 
 ## Getting Started
 
 To get started with the project, follow these steps:
 
 1. Clone the repository.
+```
+https://github.com/RileyManda/mocha-algorithms.git
+```
 2. Install the necessary dependencies.
+```
+npm i
+```
+Or 
+```
+yarn i
+```
 3. Run the tests to verify the correctness of your algorithm.
 
 ## Contributing
