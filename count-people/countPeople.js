@@ -1,11 +1,23 @@
-function countPeople(room) {
-  let count = room.length;
+class Solution {
+  static solution(room) {
+    let count = room.length;
 
-  if (count === 2) {
-    count += 1;
+    if (count === 2) {
+      count += 1;
+    }
+
+    return count;
   }
 
-  return count;
+  static solution2(room) {
+    let count = room.length;
+
+    if (count === 2) {
+      count += 2;
+    }
+
+    return count;
+  }
 }
 
-module.exports = countPeople;
+module.exports = Solution;
