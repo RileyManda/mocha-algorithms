@@ -39,7 +39,7 @@ You are given a task to count the number of people in a room. Your goal is to wr
 
 The algorithm uses a simple approach to count the number of people in a room based on the provided list of names.
 
-Here is the code breakdown:
+Simple solution breakdown:
 
 ```javascript
 function countPeople(room) {
@@ -52,7 +52,24 @@ count += 1;
 return count;
 }
 ```
+Simple Solution with comments:
+```javascript
+// Function declaration, takes 'room' as an argument
+function countPeople(room) { 
+  let count = room.length; // Assigns the length of 'room' array to 'count' variable
 
+  if (count === 2) { // Checks if 'count' is equal to 2
+    count += 1; // If true, increments 'count' by 1
+  }
+
+  return count; // Returns the value of 'count'
+}
+```
+
+
+The time complexity of the given algorithm is constant time, denoted as O(1). 
+
+The algorithm does not contain any loops or recursive calls. It simply performs a constant number of operations regardless of the size of the input. The only operation performed is checking the length of the "room" array, which takes constant time. Therefore, the algorithm's time complexity remains constant regardless of the size of the input.
 
 ## Getting Started
 
