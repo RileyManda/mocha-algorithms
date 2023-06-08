@@ -1,0 +1,9 @@
+{
+  "name": "mocha-algorithms",
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  },
+  "scripts": {
+    "test": "mocha tests.js"
+  }
+}
