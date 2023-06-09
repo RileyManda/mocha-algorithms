@@ -1,9 +1,12 @@
 {
   "name": "mocha-algorithms",
   "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/register": "^7.22.5",
     "mocha": "^10.2.0"
   },
   "scripts": {
-    "test": "mocha tests.js"
+    "test": "mocha --require @babel/register tests.js"
   }
 }

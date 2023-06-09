@@ -10,7 +10,7 @@ export default class CountSolutions {
   }
 
   static linkedListSolution(room) {
-    if (room === null) {
+    if (room === null || room.next === undefined) {
       return 0; // Base case: end of linked list
     }
 
@@ -100,5 +100,3 @@ export default class CountSolutions {
     return count;
   }
 }
-
-// module.exports = CountSolutions;
