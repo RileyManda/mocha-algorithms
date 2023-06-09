@@ -1,5 +1,9 @@
 :root {
-  --nav-bg-color: #fff;
+  --white-bg-color: #fff;
+  --dark-rgba: rgba(0, 0, 0, 0.2);
+  --menu-item-color: #333;
+  --menu-item-hover-color: #666;
+  --hero-bg: rgb(177, 205, 235);
 }
 
 * {
@@ -13,7 +17,7 @@
   display: flex;
   align-items: center;
   padding: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px var(--dark-rgba);
 }
 
 /* Logo styles */
@@ -35,7 +39,7 @@
 
 .menu li a {
   text-decoration: none;
-  color: #333;
+  color: var(--menu-item-color);
 }
 
 /* hover styles for menu items  */
@@ -45,12 +49,16 @@
 
 /* Section styles */
 
-.hero-container {
-  background-color: #f0f0f0;
+.hero-section {
+  background-color: var(--hero-bg);
   padding: 20px;
   height: 100vh;
   margin-bottom: 1rem;
   margin-top: 3px;
+  background-image: url(./mocha-logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #practice-section {
@@ -70,11 +78,12 @@
 }
 
 .footer-container {
-  background-color: #f0f0f0;
+  background-color: #0a0909;
   padding: 20px;
   height: auto;
   width: 100%;
   margin-top: auto;
+  color: #fff;
 }
 
 /* code view */
@@ -92,6 +101,7 @@
 /* styles for the expand/collapse functionality */
 .expand-btn {
   transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .expand-btn.expanded {
@@ -155,6 +165,7 @@
   position: absolute;
   top: 10px;
   right: 10px;
+  cursor: pointer;
 }
 
 /* expand card END */
@@ -182,5 +193,43 @@
   .card.expanded {
     width: 90%;
     max-width: 90%;
+  }
+}
+
+@media (min-width: 375) {
+  .hero-section {
+    background-color: var(--hero-bg);
+    padding: 20px;
+    height: 100vh;
+    margin-bottom: 1rem;
+    margin-top: 3px;
+    background-image: url(./mocha-logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+/* Mobile  Media Queries */
+@media only screen and (min-width: 375px) {
+  .hero-section {
+    background-color: var(--white-bg-color);
+    background-image: url(./mocha-logo.png);
+  }
+}
+
+/* Desktop Media Queries */
+
+@media only screen and (min-width: 768px) {
+  .hero-section {
+    background-color: var(--hero-bg);
+    padding: 20px;
+    height: 100vh;
+    margin-bottom: 1rem;
+    margin-top: 3px;
+    background-image: url(./mocha-logo-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
 }
