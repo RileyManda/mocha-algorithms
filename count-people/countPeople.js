@@ -19,5 +19,4 @@ class CountSolutions {
     return count;
   }
 }
-
-module.exports = CountSolutions;
+export default CountSolutions;

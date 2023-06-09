@@ -1,4 +1,3 @@
-/* Reset default margin and padding for the entire page */
 :root {
   --nav-bg-color: #fff;
 }
@@ -39,7 +38,141 @@
   color: #333;
 }
 
-/* Optional: Add hover styles for menu items */
+/* hover styles for menu items  */
 .menu li a:hover {
   color: #666;
+}
+
+/* Section styles */
+
+.hero-container {
+  background-color: #f0f0f0;
+  padding: 20px;
+  height: 100vh;
+  margin-bottom: 1rem;
+  margin-top: 3px;
+}
+
+#practice-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin-bottom: 1rem;
+}
+
+#about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin-bottom: 1rem;
+}
+
+.footer-container {
+  background-color: #f0f0f0;
+  padding: 20px;
+  height: auto;
+  width: 100%;
+  margin-top: auto;
+}
+
+/* code view */
+.code {
+  background-color: #282c34;
+  color: #9fb5dd;
+  padding: 0;
+  font-family: monospace;
+  white-space: pre-wrap;
+  width: 100%;
+}
+
+/* expand card START */
+
+/* styles for the expand/collapse functionality */
+.expand-btn {
+  transition: transform 0.3s ease-in-out;
+}
+
+.expand-btn.expanded {
+  transform: rotate(180deg);
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 10px;
+  z-index: 2;
+}
+
+.card-content {
+  background-color: #282c34;
+  padding: 0;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.card.expanded {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  max-width: 50%;
+  height: 50%;
+  max-height: 90vh;
+  z-index: 1;
+}
+
+.card.expanded .card-content {
+  height: calc(100% - 40px);
+}
+
+.card.expanded .card-content .code {
+  max-width: 100%;
+}
+
+.card.expanded .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* expand card END */
+
+.counting-people-solution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    flex-wrap: wrap;
+  }
+
+  .menu li {
+    margin-bottom: 10px;
+  }
+
+  .card.expanded {
+    width: 90%;
+    max-width: 90%;
+  }
 }

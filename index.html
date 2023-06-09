@@ -5,48 +5,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <title>Mocha-Algorithms</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="mocha-logo.png" alt="Logo">
-        </div>
-        <ul class="menu">
-            <li><a href="#hero-section">Home</a></li>
-            <li><a href="#practice-section">Practice</a></li>
-            <li><a href="#about-section">About</a></li>
-            <li><a href="#contact-section">Contact</a></li>
-        </ul>
-    </nav>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="mocha-logo.png" alt="Logo">
+            </div>
+            <ul class="menu">
+                <li><a href="#hero-section">Home</a></li>
+                <li><a href="#practice-section">Practice</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-
-    <section id="hero-section" class="hero-container">
+    <div id="hero-section" class="hero-container">
         <h2>Home</h2>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At repellendus voluptatibus nesciunt repudiandae, laudantium sed? Laudantium doloremque vero, explicabo et molestias eligendi optio neque ex dolore, excepturi asperiores tempora nam.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique ducimus, neque incidunt impedit temporibus eum eveniet maiores nam deleniti accusamus officiis exercitationem nulla? Doloribus praesentium facere eos, impedit animi inventore.
-    </section>
-
-    <section id="practice-section" class="section-container">
-        <h2>Practice</h2>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, dicta quos! Excepturi molestiae, culpa, earum repellat nobis aut temporibus iste in id beatae delectus consectetur, dicta rem consequuntur doloribus velit!
-    </section>
-
-    <section id="about-section" class="section-container">
-        <h2>About</h2>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, dicta quos! Excepturi molestiae, culpa, earum
-        repellat nobis aut temporibus iste in id beatae delectus consectetur, dicta rem consequuntur doloribus velit!
-    </section>
-
-    <section id="contact-section" class="footer-container">
-        <h2>Contact</h2>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, dicta quos! Excepturi molestiae, culpa, earum
-        repellat nobis aut temporibus iste in id beatae delectus consectetur, dicta rem consequuntur doloribus velit!
-    </section>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At repellendus voluptatibus nesciunt repudiandae,
+        laudantium sed? Laudantium doloremque vero, explicabo et molestias eligendi optio neque ex dolore, excepturi
+        asperiores tempora nam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique ducimus, neque
+        incidunt impedit temporibus eum eveniet maiores nam deleniti accusamus officiis exercitationem nulla?
+        Doloribus praesentium facere eos, impedit animi inventore.
+    </div>
+    <main>
+        <section id="practice-section" class="practice-section">
+            <h2>CountPeople</h2>
+            <div class="counting-people-solution">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Counting People Solution</h3>
+                        <button class="expand-btn">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="card-content">
+                        <code id="cardCodeContainer" class="code"></code>
+                        <button class="close-btn">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about-section" class="about-section">
+            <h2>About</h2>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, dicta quos! Excepturi molestiae, culpa,
+            earum
+            repellat nobis aut temporibus iste in id beatae delectus consectetur, dicta rem consequuntur doloribus
+            velit!
+        </section>
+     
+    </main>
+    <footer id="contact-section" class="footer-container">
+        Footer section
+    </footer>
+    <script type="module" src="./count-people/countpeople.js"></script>
+    <script type="module" src="index.js"></script>
 </body>
 
 </html>
