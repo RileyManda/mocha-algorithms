@@ -1,1 +1,45 @@
-/* mocha algorithm stle */
+/* Reset default margin and padding for the entire page */
+:root {
+  --nav-bg-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: var(--nav-bg-color);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo styles */
+.logo img {
+  height: 40px;
+  width: 40px;
+}
+
+/* Menu styles */
+.menu {
+  list-style-type: none;
+  display: flex;
+  margin-left: auto;
+}
+
+.menu li {
+  margin-right: 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Optional: Add hover styles for menu items */
+.menu li a:hover {
+  color: #666;
+}
