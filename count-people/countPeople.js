@@ -18,5 +18,15 @@ class CountSolutions {
 
     return count;
   }
+
+  static solution3(room) {
+    let count = room.length;
+
+    if (count === 2) {
+      count += 2;
+    }
+
+    return count;
+  }
 }
 export default CountSolutions;
