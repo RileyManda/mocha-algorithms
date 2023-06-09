@@ -1,4 +1,4 @@
-import CountSolutions from './count-people/countPeople.js';
+import CountSolutions from './count-people/countpeople.js';
 
 const cardContainer = document.querySelector('.counting-people-solution');
 
