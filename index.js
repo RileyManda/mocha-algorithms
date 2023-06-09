@@ -8,16 +8,16 @@ function displayCode(code) {
 }
 
 // Get the solution code
-const solutionCode1 = CountSolutions.solution.toString();
-const solutionCode2 = CountSolutions.solution2.toString();
+const countsolutionCode1 = CountSolutions.solution.toString();
+const countsolutionCode2 = CountSolutions.solution2.toString();
 
 // Format the code for display
 const formattedCode = `
       // Solution 1
-      ${solutionCode1}
+      ${countsolutionCode1}
 
       // Solution 2
-      ${solutionCode2}
+      ${countsolutionCode2}
     `;
 
 // Display the formatted code
