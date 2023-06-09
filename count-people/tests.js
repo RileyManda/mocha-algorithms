@@ -1,5 +1,5 @@
-import assert from 'assert';
-import CountSolutions from './countPeople.js';
+const assert = require('assert');
+const CountSolutions = require('./countpeople.js');
 
 describe('Count People', () => {
   it('Should return 0 if the room is empty', () => {

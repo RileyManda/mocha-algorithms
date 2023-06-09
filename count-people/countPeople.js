@@ -1,4 +1,4 @@
-class CountSolutions {
+export default class CountSolutions {
   static binarySolution(room) {
     if (room.length === 0) {
       return 0; // Base case: empty room
@@ -28,7 +28,8 @@ class CountSolutions {
 
     if (room[mid] === target) {
       return 1; // Base case: element found
-    } if (room[mid] < target) {
+    }
+    if (room[mid] < target) {
       // Recursive call on the right half
       return CountSolutions.binarySearchSolution(room, mid + 1, end, target);
     }
@@ -100,4 +101,4 @@ class CountSolutions {
   }
 }
 
-export default CountSolutions;
+// module.exports = CountSolutions;
