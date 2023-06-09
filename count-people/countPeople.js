@@ -1,4 +1,4 @@
-class Solution {
+class CountSolutions {
   static solution(room) {
     let count = room.length;
 
@@ -20,4 +20,4 @@ class Solution {
   }
 }
 
-module.exports = Solution;
+module.exports = CountSolutions;
