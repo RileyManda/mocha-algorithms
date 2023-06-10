@@ -2,7 +2,7 @@
   --white-bg-color: #fff;
   --dark-rgba: rgba(0, 0, 0, 0.2);
   --menu-item-color: #333;
-  --menu-item-hover-color: #666;
+  --menu-item-hover-color: #468dbf;
   --hero-bg: hsla(240, 38%, 20%, 0.9);
 }
 
@@ -44,7 +44,7 @@
 
 /* hover styles for menu items  */
 .menu li a:hover {
-  color: #666;
+  color: var(--menu-item-hover-color);
 }
 
 /* Section styles */
@@ -80,10 +80,34 @@
 .footer-container {
   background-color: #0a0909;
   padding: 20px;
-  height: auto;
-  width: 100%;
-  margin-top: auto;
-  color: #fff;
+  display: flex;
+  align-items: center;
+  color: var(--white-bg-color);
+}
+
+.footer-logo {
+  margin-right: 10px;
+}
+
+.footer-logo img {
+  height: 40px;
+  width: 40px;
+}
+
+.text {
+  flex-grow: 1;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.links a {
+  color: var(--white-bg-color);
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.links a:hover {
+  text-decoration: underline;
 }
 
 /* code view */
