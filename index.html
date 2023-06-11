@@ -5,21 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
     <title>Mocha-Algorithms</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="mocha-logo.png" alt="Logo">
-        </div>
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contribute</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="mocha-logo.png" alt="Logo">
+            </div>
+            <ul class="menu">
+                <li><a href="#hero-section">Home</a></li>
+                <li><a href="#practice-section">Practice</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="hero-section" class="hero-section">
+    </div>
+    <main>
+        <section id="practice-section" class="practice-section">
+            <h2>CountPeople</h2>
+            <div class="counting-people-solution"></div>
+        </section>
+        <section id="about-section" class="about-section">
+            <h2>About</h2>
+        </section>
+
+    </main>
+<footer id="contact-section" class="footer-container">
+    <div class="logo">
+        <img src="./mocha-logo.png" alt="Logo" />
+    </div>
+    <div class="text">
+        Mocha Algorithms
+    </div>
+    <div class="links">
+        <a href="https://github.com/RileyManda/mocha-algorithms">Support</a>
+        <a href="https://github.com/RileyManda/mocha-algorithms">Contribute</a>
+        <a href="https://github.com/RileyManda/mocha-algorithms">Test</a>
+    </div>
+</footer>
+
+
+    <!-- modules -->
+    <script type="module" src="./count-people/countpeople.js"></script>
+    <script type="module" src="index.js"></script>
 </body>
 
 </html>
