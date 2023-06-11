@@ -1,8 +1,8 @@
 const cardUtils = require('./cardUtils.js');
-const CountSolutions = require('./count-people/countpeople.js').CountSolutions;
+const { CountSolutions } = require('./count-people/countPeople.js');
 
-const createCard = cardUtils.createCard;
-const displayCode = cardUtils.displayCode;
+const { createCard } = cardUtils;
+const { displayCode } = cardUtils;
 
 // Define an array of solution functions with their respective names
 const solutionFunctions = [
@@ -11,8 +11,7 @@ const solutionFunctions = [
   { fn: CountSolutions.binarySearchSolution, name: 'Binary Search Solution' },
   { fn: CountSolutions.mergeSortSolution, name: 'Merge Sort Solution' },
   { fn: CountSolutions.quickSortSolution, name: 'Quick Sort Solution' },
-  {fn: CountSolutions.binarySearchTreeSolution,name: 'Binary Search Tree Solution',
-  },
+  { fn: CountSolutions.binarySearchTreeSolution, name: 'Binary Search Tree Solution' },
 ];
 
 // Function to generate cards for each solution
@@ -38,13 +37,10 @@ function generateCards(targetElement) {
     card.addEventListener('collapse', () => {
       card.classList.remove('expanded');
     });
-
-    console.log(card);
   });
 }
 
-
 const targetElement = {
-  querySelector: (selector) => console.log(`Querying selector: ${selector}`),
+  querySelector: (selector) => (`${selector}`),
 };
 generateCards(targetElement);

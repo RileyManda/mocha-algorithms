@@ -1,31 +1,26 @@
 {
-  "extends": "stylelint-config-standard",
-  "plugins": ["stylelint-scss", "stylelint-csstree-validator"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "extends": ["airbnb-base"],
   "rules": {
-    "at-rule-no-unknown": [
-      true,
+    "no-shadow": "off",
+    "no-param-reassign": "off",
+    "eol-last": "off",
+    "import/extensions": [
+      1,
       {
-        "ignoreAtRules": [
-          "tailwind",
-          "apply",
-          "variants",
-          "responsive",
-          "screen"
-        ]
+        "js": "always",
+        "json": "always"
       }
-    ],
-    "scss/at-rule-no-unknown": [
-      true,
-      {
-        "ignoreAtRules": [
-          "tailwind",
-          "apply",
-          "variants",
-          "responsive",
-          "screen"
-        ]
-      }
-    ],
-    "csstree/validator": true
-  }
+    ]
+  },
+  "ignorePatterns": ["dist/", "build/"]
 }

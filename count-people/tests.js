@@ -1,5 +1,5 @@
 import assert from 'assert';
-import CountSolutions from './countpeople.js';
+import CountSolutions from './countPeople.js';
 
 describe('Count People', () => {
   it('Should return 0 if the room is empty', () => {
