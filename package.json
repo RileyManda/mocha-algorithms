@@ -14,5 +14,8 @@
   },
   "scripts": {
     "test": "mocha --require @babel/register tests.js"
+  },
+  "dependencies": {
+    "luxon": "^3.3.0"
   }
 }
